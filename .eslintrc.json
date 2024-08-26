@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "curly": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "indent": ["warn", 2]
+  }
 }
