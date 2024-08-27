@@ -8,7 +8,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="h-[calc(100svh-4rem)] flex-center overflow-hidden space-y-4 flex-col">
+      <div className="h-full pt-12 flex-center overflow-hidden space-y-4 flex-col">
         <label className="form-control w-full max-w-xs">
           <div className="label">
             <span className="label-text">Input your room:</span>

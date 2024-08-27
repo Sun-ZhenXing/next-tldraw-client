@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root,
+body,
+.navbar {
+  transition:
+    background-color 0.8s,
+    color 0.3s;
+}

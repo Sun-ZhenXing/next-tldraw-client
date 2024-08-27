@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.8.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

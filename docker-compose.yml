@@ -17,8 +17,8 @@ services:
     depends_on:
       - server
   server:
+    <<: *default
     image: fastify-tldraw-server:${VERSION:-latest}
-    restart: unless-stopped
     ports:
       - ${SERVER_PORT:-5879}:5858
     volumes:

@@ -71,3 +71,9 @@ server {
     }
 }
 ```
+
+## License
+
+This project is open source under the MIT protocol.
+
+For the **tldraw** library you will need to purchase your own commercial license.
