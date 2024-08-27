@@ -1,0 +1,28 @@
+x-default: &default
+  restart: unless-stopped
+  volumes:
+    - &localtime /etc/localtime:/etc/localtime:ro
+    - &timezone /etc/timezone:/etc/timezone:ro
+  logging:
+    driver: json-file
+    options:
+      max-size: 1m
+
+services:
+  web:
+    <<: *default
+    image: next-tldraw-client:${VERSION:-latest}
+    ports:
+      - ${WEB_PORT:-3079}:3000
+    depends_on:
+      - server
+  server:
+    image: fastify-tldraw-server:${VERSION:-latest}
+    restart: unless-stopped
+    ports:
+      - ${SERVER_PORT:-5879}:5858
+    volumes:
+      - *localtime
+      - *timezone
+      - ./data/assets:/app/.assets
+      - ./data/rooms:/app/.rooms

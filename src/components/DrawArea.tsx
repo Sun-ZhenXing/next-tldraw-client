@@ -20,7 +20,7 @@ export default function DrawArea({ roomId }: { roomId?: string }) {
   })
 
   return (
-    <div style={{ position: 'fixed', inset: 0 }}>
+    <div className="fixed inset-0">
       <Tldraw
         store={store}
         onMount={(editor) => {
