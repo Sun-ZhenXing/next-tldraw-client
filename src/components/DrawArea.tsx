@@ -1,6 +1,7 @@
 'use client'
 import 'tldraw/tldraw.css'
 
+import { tldrawTranslations } from '@/utils/i18n'
 import { useSync } from '@tldraw/sync'
 import {
   AssetRecordType,
@@ -20,13 +21,18 @@ export default function DrawArea({ roomId }: { roomId?: string }) {
   })
 
   return (
-    <div className="fixed inset-0">
-      <Tldraw
-        store={store}
-        onMount={(editor) => {
-          editor.registerExternalAssetHandler('url', unfurlBookmarkUrl)
-        }}
-      />
+    <div>
+      <div className="fixed inset-0">
+        <Tldraw
+          store={store}
+          onMount={(editor) => {
+            editor.registerExternalAssetHandler('url', unfurlBookmarkUrl)
+          }}
+          overrides={{
+            translations: tldrawTranslations,
+          }}
+        />
+      </div>
     </div>
   )
 }

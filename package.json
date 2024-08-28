@@ -6,7 +6,7 @@
   "packageManager": "pnpm@9.8.0",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
