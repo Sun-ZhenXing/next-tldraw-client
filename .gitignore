@@ -3,6 +3,10 @@
 .env.*
 !.env.example
 
+# Serwist
+public/sw*
+public/swe-worker*
+
 # dependencies
 /node_modules
 /.pnp
