@@ -11,7 +11,7 @@ export const tldrawTranslations: TLUiOverrides['translations'] = {
     'action.export-all-as-svg': '导出全部绘图为 SVG',
     'action.fork-project-on-tldraw': '在 tldraw.com 上分叉项目',
     'action.paste-error-title': '粘贴错误',
-    'action.paste-error-description': '无法粘贴此项目。请确保您复制了正确的项目。',
+    'action.paste-error-description': '无法粘贴此项目，请确保您复制了正确的项目。',
     'action.rename': '重命名',
     'action.toggle-paste-at-cursor.menu': '粘贴到光标位置',
     'action.toggle-paste-at-cursor': '粘贴到光标位置',

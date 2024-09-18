@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.10.0",
   "license": "MIT",
   "scripts": {
     "dev": "next dev --turbo",
@@ -14,24 +14,24 @@
   },
   "dependencies": {
     "@serwist/next": "^9.0.7",
-    "@tldraw/sync": "^2.4.5",
+    "@tldraw/sync": "^3.0.3",
     "next": "14.2.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "serwist": "^9.0.7",
-    "tldraw": "^2.4.5"
+    "tldraw": "^3.0.3"
   },
   "devDependencies": {
-    "@types/node": "^22.5.0",
-    "@types/react": "^18.3.4",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.7",
     "@types/react-dom": "^18.3.0",
     "daisyui": "^4.12.10",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.2.6",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.47",
     "rimraf": "^6.0.1",
-    "sass": "^1.77.8",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "sass": "^1.79.1",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2"
   }
 }
