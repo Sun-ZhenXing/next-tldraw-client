@@ -13,12 +13,12 @@
     "clean": "rimraf -g public/sw.* && rimraf -g public/swe-worker* && rimraf .next"
   },
   "dependencies": {
-    "@serwist/next": "^9.0.7",
+    "@serwist/next": "^9.0.8",
     "@tldraw/sync": "^3.0.3",
-    "next": "14.2.6",
+    "next": "^14.2.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "serwist": "^9.0.7",
+    "serwist": "^9.0.8",
     "tldraw": "^3.0.3"
   },
   "devDependencies": {
